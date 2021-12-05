@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="brand">
+                <h2 class="brand-name" >Lorem</h2>
+            </div>
+            <div class="hamber" id="hamber">
+                <div class="hamber-icon" id="icon"  >
+                    <i class="fas fa-bars" onclick="openNav();"></i>
+                </div>
+                <div class="close" id="close" onclick="details();">
+                    <i class="far fa-times" id="close-icon" onclick="closeNav();"></i>
+                </div>
+                <div class="nav-items" id="nav-items">
+                <div class="navlinks" id="navlinks">
+                    <ul>
+                        <li><a href="#">
+                                <h4>About</h4>
+                            </a></li>
+                        <li><a href="#">
+                                <h4>Services</h4>
+                            </a></li>
+                        <li><a href="#">
+                                <h4>Cuisine</h4>
+                            </a></li>
+                        <li><a href="#">
+                                <h4>Gallery</h4>
+                            </a></li>
+                        <li><a href="#">
+                                <h4>Contact</h4>
+                            </a></li>
+                        <li><a href="#">
+                                <h4>Book</h4>
+                            </a></li>
+                    </ul>
+                    <button class="cart-btn">Cart</button>
+                </div>
+                
+                </div>
+                
+                 
+            </div>
+            <div class="cart">
+                <i class="fal fa-shopping-cart"></i>
+            </div>
+            
+        </div>
+        <div class="body">
+            <h1>What are you having for Lunch?</h1>
+            <div class="body-container">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg" alt="">
+                        <div class="item-name"><b>Mexican Taco</b></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emFzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                        <div class="item-name"><b>Farmhouse Pizza</b></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://static.toiimg.com/photo/75673473.cms" alt="">
+                        <div class="item-name"><b>Chicken Burger</b></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://static.toiimg.com/thumb/55046506.cms?width=1200&height=900" alt="">
+                        <div class="item-name"><b>Loaded Nachos</b></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i0.wp.com/zheelicious.com/wp-content/uploads/2021/03/IMG_3191_Original.jpg?resize=870%2C773&ssl=1" alt="">
+                        <div class="item-name"><b>Hakka Noodles</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="para">Lorem ipsum dolor sit amet,<br>consectetur adipising elit,<br>sed do elusmod tempor<br>
+                incididunt ut labore er.
+            </div>
+            <div class="line"></div>
+        </div>
+
+    </div>
+    <script>
+            var h=document.getElementById("hamber");
+            var hi=document.getElementById("icon");
+            var nl=document.getElementById("nav-items");
+            var x=document.getElementById("close");
+        function openNav(){
+            h.classList.add("open-nav");
+            nl.style.display="block";
+            x.style.display="block";
+            hi.style.display="none";
+        }
+        function closeNav(){
+            h.classList.remove("open-nav");
+            nl.style.display="none";
+            x.style.display="none";
+            hi.style.display="block";
+
+        }
+    </script>
+</body>
+</html>
